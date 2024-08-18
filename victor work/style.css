@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "josefin", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(Untitled\ design.png);
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* position: sticky; */
+}
+.logo {
+  font-size: 28px;
+  color: white;
+}
+span {
+  color: red;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: red;
+  transition: 0.3s ease-in-out;
+}
+
+main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  flex-direction: row;
+}
+
+main img {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  margin-top: 120px;
+  border-radius: 50%;
+}
+.desc-full {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+p {
+  width: 600px;
+  padding-right: 100px;
+  margin-right: 100px;
+}
+h1 {
+  align-items: center;
+  justify-content: center;
+  margin-right: 200px;
+}
+.meet-me {
+  width: 100%;
+  height: 100vh;
+  padding: auto;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+#meet {
+  width: 50%;
+  height: 75vh;
+  background-color: black;
+  align-items: center;
+  margin-left: 300px;
+  box-sizing: border-box;
+  margin-top: 60px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(Untitled\ design.png);
+  background-size: cover;
+  background-position: center;
+}
+input {
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-right: 70px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border-bottom: 2px solid red;
+  width: 75%;
+  box-sizing: border-box;
+  box-shadow: 10 20 3 black inset;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 50px;
+}
+select {
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-right: 80px;
+  justify-content: center;
+  border-radius: 20px;
+  border-bottom: 2px solid red;
+  width: 75%;
+  box-sizing: border-box;
+  box-shadow: 10 20 3 black inset;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 50px;
+}
+
+body {
+  margin: 0;
+  background: lightgray;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fefefe;
+}
+.container {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face {
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+  color: white;
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url("vic\ 1.jpg");
+  transform: rotateY(0deg) translateZ(430px);
+}
+.carousel__face:nth-child(2) {
+  background-image: url("vic\ 2.jpg");
+  transform: rotateY(40deg) translateZ(430px);
+}
+.carousel__face:nth-child(3) {
+  background-image: url("vic3.jpg");
+  transform: rotateY(80deg) translateZ(430px);
+}
+.carousel__face:nth-child(4) {
+  background-image: url("vic\ 4.jpg");
+  transform: rotateY(120deg) translateZ(430px);
+}
+.carousel__face:nth-child(5) {
+  background-image: url("vic\ 5.jpg");
+  transform: rotateY(160deg) translateZ(430px);
+}
+.carousel__face:nth-child(6) {
+  background-image: url("vic\ 6.jpg");
+  transform: rotateY(200deg) translateZ(430px);
+}
+.carousel__face:nth-child(7) {
+  background-image: url("vic\ 7.jpg");
+  transform: rotateY(240deg) translateZ(430px);
+}
+.carousel__face:nth-child(8) {
+  background-image: url("profile.jpg");
+  transform: rotateY(280deg) translateZ(430px);
+}
+.carousel__face:nth-child(9) {
+  background-image: url("vic\ 6.jpg");
+  transform: rotateY(320deg) translateZ(430px);
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+#video-area {
+  width: 100%;
+  height: 100vh;
+}
+
+.vid {
+  width: 40%;
+  height: 60vh;
+  background-color: black;
+  border-bottom: 2px solid blue;
+  margin-top: 700px;
+  margin-left: 400px;
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(Untitled\ design.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.vid video {
+  width: 80%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+  margin-left: 20px;
+  margin-right: 300px;
+}
+
+.vid video:hover {
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+controls[data-state="hidden"] {
+  display: none;
+}
+
+controls[data-state="visible"] {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 100vh;
+    width: 250%;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(Untitled\ design.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* position: sticky; */
+  }
+
+  .logo {
+    font-size: 28px;
+    color: white;
+    width: 10%;
+  }
+  span {
+    color: red;
+    width: 10%;
+  }
+  nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px 20px;
+    width: 10%;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    width: 10%S;
+  }
+  .meet-me {
+    width: 70%;
+    height: 50vh;
+    margin: 0;
+    padding: auto;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  #meet {
+    width: 200%;
+    height: 50vh;
+    margin-right: 0;
+    background-color: black;
+    align-items: center;
+    margin-left: 0px;
+    box-sizing: border-box;
+    margin-top: 60px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(Untitled\ design.png);
+    background-size: cover;
+    background-position: center;
+  }
+  input {
+    padding: 10px 20px;
+    margin-top: 40px;
+    margin-right: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border-bottom: 2px solid red;
+    width: 30%;
+    box-sizing: border-box;
+    box-shadow: 10 20 3 black inset;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 50px;
+  }
+  select {
+    padding: 10px 20px;
+    margin-top: 40px;
+    margin-right: 80px;
+    justify-content: center;
+    border-radius: 20px;
+    border-bottom: 2px solid red;
+    width: 30%;
+    box-sizing: border-box;
+    box-shadow: 10 20 3 black inset;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 50px;
+  }
+
+  .container {
+    position: relative;
+    margin-bottom: 700px;
+    width: 300px;
+    margin: 80px auto 0 auto;
+    perspective: 1000px;
+  }
+
+  #video-area {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .vid {
+    width: 200%;
+    height: 60vh;
+    background-color: black;
+    border-bottom: 2px solid blue;
+    margin-top: 1000px;
+    margin-left: 60px;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(Untitled\ design.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .vid video {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 60px;
+    margin-left: 10px;
+    margin-right: 300px;
+  }
+}
